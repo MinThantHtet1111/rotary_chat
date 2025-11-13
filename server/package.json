@@ -1,0 +1,13 @@
+{
+  "name": "auth-backend",
+  "type": "commonjs",
+  "main": "dist/index.js",
+  "scripts": {
+    "dev": "ts-node-dev --respawn --transpile-only src/index.ts",
+    "build": "tsc",
+    "start": "node dist/index.js"
+  },
+  "devDependencies": {
+    "@types/pg": "^8.15.6"
+  }
+}
