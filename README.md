@@ -43,6 +43,23 @@ SMTP_PASS=your passkey
 MAIL_FROM=
 ```
 
+# Database Setup (Optional)
+Using PostgreSQL
+```
+DATABASE_URL=postgresql://postgres:password@localhost:5432/mydatabase
+```
+- postgres → username
+- password → DB password
+- localhost → running on your machine
+- 5432 → default PostgreSQL port
+- mydatabase → your DB name
+
+Or Using Prisma
+```
+npx prisma migrate dev
+npx prisma generate
+```
+
 # Install backend dependencies
 ```
 cd server
